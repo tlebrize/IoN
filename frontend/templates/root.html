@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/pico.min.css">
+<title>IoN</title>
+</head>
+<body bgcolor='#0C0A00'>
+  <main class="container">
+
+    <div id="content">
+      <ul>
+        {% for album in albums %}
+        <li><a href="/{{ album.id }}"> - {{ album.title }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </main>
+  </body>
+</html>

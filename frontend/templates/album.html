@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>IoN</title>
+  </head>
+  <body bgcolor='#0C0A00'>
+    <main class="container">
+
+{% for image in images %}
+  <section>
+    {% if image.endswith('.mp4') %}
+      <video controls preload="none">
+        <source src="{{ base_path }}/{{ image }}">
+      </video>
+    {% else %}
+      <img src="{{ base_path }}/{{ image }}" loading="lazy" alt="..." >
+    {% endif %}
+  </section>
+{% endfor %}
+
+    </main>
+  </body>
+</html>
+
