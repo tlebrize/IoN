@@ -131,3 +131,6 @@ dmypy.json
 
 # Data
 albums/
+
+# Secrets
+secrets.toml

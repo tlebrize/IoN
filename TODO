@@ -1,0 +1,7 @@
+scrapper -> metada in ion-metadata bucket
+		 -> media in ion-frontend bucket
+
+generator -> pulls from ion-metadata
+		  -> generates html
+		  -> upload html to ion-frontend
+

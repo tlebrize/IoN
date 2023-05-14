@@ -1,8 +1,0 @@
-[imgur]
-client_id = "546c25a59c58ad7"
-api_version = 3
-account_name = "abbiistabbii"
-
-[storage]
-type = 'local'
-albums_location = '../albums'
